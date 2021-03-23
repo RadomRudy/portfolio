@@ -1,0 +1,276 @@
+index:
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>PORTFOLIO</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">PORTFOLIO</a>
+            <ul>
+                <li><a href="moi.html">Moi</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section class="banner"></section>
+        <center><img src="wolf.png" width="10%" height="10%"></center>
+    </body>
+</html>
+
+contact:
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>PORTFOLIO</title>
+    </head>
+    <body>
+        <header>
+            <a href="contact.html" class="logo">Contact</a>
+            <ul>
+                <li><a href="index.html">PORTFOLIO</a></li>
+                <li><a href="moi.html">Moi</a></li>
+                <li><a href="projets.html">Projets</a></li>
+            </ul>
+        </header>
+        <section class="banner"></section>
+        <center><img src="wolf.png" width="10%" height="10%"></center>
+        <div class="container2">
+            <h3 class="title title-1">Contact</h3>
+            <form class="form">
+
+            <div class="form__group">
+                <input type="text" class="form__input" id="nom" 
+                placeholder="Votre Nom" required>
+                <label for="nom" class="form__label">
+                    Votre Nom
+                </label>
+            </div>   
+
+            <div class="form__group">
+                <input type="email" class="form__input" id="email"
+                placeholder="Votre Email" required>
+                <label for="email" class="form__label">
+                     Votre Email
+                </label>
+            </div>  
+
+            <div class="form__group">
+                <input type="number" class="form__input" id="age"
+                placeholder="Votre age" required min="1" max="107" step="1">
+                <label for="age" class="form__label">
+                     Votre Age
+                </label>
+            </div>  
+
+                 <div class="form__message">
+                     <label for="" class="form__message-label"></label>
+                     Message complémentaire (facultatif) :
+                     <textarea name="" id= "message" cols="30" rows="10" 
+                     class="form__input message__input"></textarea>
+                 </div>
+                    <div class="submit">
+                    <button class="submitBtn">Envoyer &rarr;</button>
+            </form>
+        </div> 
+    </body>
+</html>
+
+moi:
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>PORTFOLIO</title>
+    </head>
+    <body>
+        <header>
+            <a href="moi.html" class="logo">Moi</a>
+            <ul>
+                <li><a href="index.html">PORFOLIO</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section class="banner"></section>
+        <center><img src="wolf.png" width="10%" height="10%"></center>
+
+    </body>
+</html>
+
+projets:
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>PORTFOLIO</title>
+    </head>
+    <body>
+        <header>
+            <a href="projets.html" class="logo">Projets</a>
+            <ul>
+                <li><a href="index.html">PORTFOLIO</a></li>
+                <li><a href="moi.html">Moi</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section class="banner"></section>
+        <center><img src="wolf.png" width="10%" height="10%"></center>
+    </body>
+</html>
+
+css:
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=wap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(#fff);
+    min-height: 200vh;
+}
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+.title{
+    color: black;
+}
+.form__group{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.form__label{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 16px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all .3s;
+}
+.form__input{
+    font-size: 20px;
+     font-family: inherit;
+     padding: 0px 0px;
+     border-radius: 1px;
+     border: 20%;
+     border-bottom: 5px  ;
+     width: 50%;
+     transition: all .3s;
+}
+.form__message, .message__input{width: 100%;}
+.submitBtn{
+    display: block;
+    border: none;
+    outline: none;
+    background-color: #3bc1ff;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    border-radius: 30px;
+    margin: 30px auto;
+    cursor: pointer;
+    transition: all .3s;
+}
+.container2{
+    text-align: center;
+    border-radius: 5px;
+    width: 680px;
+    height: 670px;
+    margin: 10px auto;
+    box-shadow: 5px 5px 5px rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+body{
+  font-family: sans-serif;
+}
+.wrapper{
+    margin-top: 10%;  
+}
+.wrapper h3{
+    font-family: 'allura', cursive;
+    font-size: 52px;
+    margin-bottom:60px;
+    text-align: center;
+}
+h3{
+    color: #81c644;
+}
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+.team .team_member{
+    background: #fff;
+    margin: 1px;
+    margin-bottom: 50px;
+    width: 400px;
+    padding: 0px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+}
+.team .team_member h3{
+    color: #81c644;
+    font-size: 26px;
+    margin-top: 50px;
+}
+.team .team_member p.role{
+    color: #ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+
+    <script type="text/Javascript" src="fonctions.js"></script>
+    <link rel="icon" type="image/jpg" href="wolf.png" />
+    <title>PORTFOLIO</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="projets.html" class="logo">Projets</a>
+      <ul>
+        <li><a href="index.html">PORTFOLIO</a></li>
+        <li><a href="moi.html">Moi</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+    <section class="banner">
+      <center><img src="wolf.png" width="10%" height="10%" /></center>
+    </section>
+    <section id="bienvenue">
+      <button id="btnPopup1" class="btnPopup">Mon CV</button>
+      <div id="overlay1" class="overlay">
+        <div id="popup1" class="popup">
+          <h5>
+            Mon CV<span id="btnClose1" class="btnClose">Fermer &times;</span>
+          </h5>
+
+          <center>
+            <img src="CV.png" id="initiale" width="35%" height="35%" />
+          </center>
+        </div>
+      </div>
+    </section>
+    <section id="bienvenue">
+      <button id="btnPopup2" class="btnPopup">Lettre de motivation</button>
+      <div id="overlay2" class="overlay">
+        <div id="popup2" class="popup">
+          <h5>
+            Ma lettre de motivation<span id="btnClose2" class="btnClose"
+              >Fermer &times;</span
+            >
+          </h5>
+
+          <center>
+            <img
+              src="lettre de motivation.png"
+              id="initiale"
+              width="53%"
+              height="53%"
+            />
+          </center>
+        </div>
+      </div>
+    </section>
+    <section id="bienvenue">
+      <button id="btnPopup3" class="btnPopup">Pitch</button>
+      <div id="overlay3" class="overlay">
+        <div id="popup3" class="popup">
+          <h5>
+            Mon Pitch<span id="btnClose3" class="btnClose">Fermer &times;</span>
+          </h5>
+
+          <center>
+            <img src="pitch.png" id="initiale" width="88%" height="88%" />
+          </center>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
