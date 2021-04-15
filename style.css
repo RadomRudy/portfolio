@@ -210,10 +210,9 @@ p {
   text-align: center;
   text-shadow: #000000e1;
 }
-/* Contact */
+/* Page contact du site */
 * {
-  margin: 0 auto;
-  padding: 0;
+  
   font-family: "montserrat", sans-serif;
 }
 .contact-section {
@@ -226,6 +225,7 @@ p {
 .border {
   background: rgb(0, 48, 70);
   margin: 40px auto;
+  
 }
 .contact-form {
   max-width: 600px;
